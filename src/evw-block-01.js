@@ -1,4 +1,7 @@
 import { registerBlockType } from '@wordpress/blocks';
+//スタイルシートを読み込む（インポート）
+import './style-01.scss';
+import './editor-01.scss';
  
 registerBlockType( 'evw/block-01', {
   title: 'EVW Sample Block 01',
@@ -24,6 +27,6 @@ registerBlockType( 'evw/block-01', {
       label: '角丸なし'
     },
   ],
-  edit: () => <div>Hello World! (Edit)</div>,
+  edit: ({ className }) => <div className={ className }>Hello World! (Edit)</div>,
   save: () => <div>Hello World! (Save)</div>,
 } );
