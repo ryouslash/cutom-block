@@ -6,7 +6,7 @@ import './editor-02.scss';
 registerBlockType( 'evw/block-02', {
   title: 'EVW Sample Block 02',
   icon: 'smiley',
-  category: 'layout',
+  category: 'custom-block-category',
   edit: ({ className }) => {
     return <div className={ className }>Hello World No.2! (Edit2)</div>
   },
