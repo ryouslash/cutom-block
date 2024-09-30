@@ -1,0 +1,12 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* ラベルを上部に表示するための設定（何故か labelPosition が機能しないため） */
+.components-base-control .components-base-control__label {
+  display: block;
+}

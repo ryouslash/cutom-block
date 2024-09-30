@@ -1,0 +1,29 @@
+$keyColor: #18c1f0;
+
+h2.wp-block-evw-heading {
+  &.is-style-pattern1 {
+    font-size: clamp(2rem, 1.8rem + 0.625vw, 2.6rem);
+    background-color: #eeeeee;
+    border-left: 3px solid $keyColor;
+    padding: 0.3em 0.5em;
+
+    margin: 2em 0 0.8em;
+  }
+}
+
+h3.wp-block-evw-heading {
+  &.is-style-pattern1 {
+    font-size: clamp(1.8rem,1.6rem + .625vw,2rem);
+    border-bottom: 3px solid $keyColor;
+    padding-bottom: 0.3em;
+    margin: 2em 0 0.8em;
+  }
+}
+
+h4.wp-block-evw-heading {
+  &.is-style-pattern1 {
+    border-left: 3px solid $keyColor;
+    padding: 0 0.5em;
+    margin: 2em 0 0.8em;
+  }
+}
