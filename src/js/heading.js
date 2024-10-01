@@ -13,23 +13,23 @@ registerBlockType('evw/heading', {
         content: {
             type: 'string',
             source: 'html',
-            selector: 'h2',  // デフォルトは h2
+            // 複数のタグに対応するため、'h2, h3, h4, h5, h6'と設定
+            selector: 'h2, h3, h4, h5, h6',
         },
         level: {
             type: 'number',
             default: 2, // デフォルトの見出しレベルを h2 に設定
         },
     },
-    //ブロックスタイル
     styles: [
         {
             name: 'default',
             label: '装飾なし',
-            isDefault: true
+            isDefault: true,
         },
         {
             name: 'pattern1',
-            label: 'パターン1'
+            label: 'パターン1',
         },
     ],
     edit: ({
@@ -59,7 +59,7 @@ registerBlockType('evw/heading', {
                 </BlockControls>
 
                 <RichText
-                    className={className} // ここで className を適用
+                    className={className}
                     tagName={tagName}
                     value={content}
                     onChange={(newContent) =>
@@ -72,7 +72,7 @@ registerBlockType('evw/heading', {
     },
 
     save: ({ attributes: { content, level } }) => {
-        const tagName = `h${level}`;
+        const tagName = `h${level}`; // 動的にタグ名を生成
         return <RichText.Content tagName={tagName} value={content} />;
     },
 });
