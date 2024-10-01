@@ -6,7 +6,7 @@ module.exports = {
     ...defaultConfig,
     entry: {
         'heading': './src/js/heading.js',
-        'evw-block-02': './src/evw-block-02.js'
+        'box': './src/js/box.js'
     },
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -22,10 +22,10 @@ module.exports = {
                     name: 'style-heading' //出力されるファイル名
                 },
                 style_02: {
-                    test: /[\\/]style-02\.(sc|sa|c)ss$/, //対象のファイル style-02.scss
+                    test: /[\\/]box\.(sc|sa|c)ss$/, //対象のファイル box.scss
                     chunks: 'all',
                     enforce: true,
-                    name: 'style-evw-block-02' //出力されるファイル名
+                    name: 'style-box' //出力されるファイル名
                 },
                 default: false,
             },

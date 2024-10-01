@@ -23,4 +23,4 @@ add_filter('block_categories', 'add_block_categories');
 
 // ブロックの登録関数をインクルード
 require_once plugin_dir_path(__FILE__) . 'register-blocks/register-heading.php';
-require_once plugin_dir_path(__FILE__) . 'register-blocks/register-evw-block-02.php';
+require_once plugin_dir_path(__FILE__) . 'register-blocks/register-box.php';

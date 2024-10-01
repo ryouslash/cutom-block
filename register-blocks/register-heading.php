@@ -24,7 +24,7 @@ function heading_block_enqueue()
   //エディター用スタイル（追加）
   wp_register_style(
     'heading-editor-style', //ハンドル名
-    //editor.scss は build ディレクトリに heading.css として出力される
+    //editor-heading.scss は build ディレクトリに heading.css として出力される
     plugins_url('build/heading.css', dirname(__FILE__)), // URLを取得する
     array('wp-edit-blocks'),  //依存スタイルのハンドル
     filemtime(dirname(plugin_dir_path(__FILE__)) . '/build/heading.css') // ファイルの更新時刻をバージョンに

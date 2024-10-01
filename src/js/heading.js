@@ -8,6 +8,7 @@ registerBlockType('evw/heading', {
     title: '見出しブロック-EVW',
     icon: 'heading',
     category: 'custom-block-category',
+    description: '独自の見出しを追加します。',
     attributes: {
         content: {
             type: 'string',

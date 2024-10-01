@@ -1,0 +1,31 @@
+$keyColor: #18c1f0;
+
+.wp-block-evw-box {
+  border: 1px solid $keyColor;
+
+  &__title {
+    background-color: $keyColor;
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+  }
+
+  &__content {
+    padding: 10px;
+
+    > * {
+      margin-bottom: 1em;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.wp-block-evw-box.is-style-pattern1 {
+  .wp-block-evw-box__title {
+    padding: 5px 20px;
+    display: inline-block;
+  }
+}
