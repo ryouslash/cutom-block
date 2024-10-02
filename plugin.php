@@ -19,7 +19,7 @@ function add_block_categories($categories)
   $categories = array_merge($categories, $add_categories);
   return $categories;
 }
-add_filter('block_categories', 'add_block_categories');
+add_filter('block_categories_all', 'add_block_categories');
 
 // ブロックの登録関数をインクルード
 require_once plugin_dir_path(__FILE__) . 'register-blocks/register-heading.php';
